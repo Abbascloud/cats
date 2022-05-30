@@ -4,7 +4,13 @@ import {
   GET_CATS_START,
   GET_CATS_SUCSESS,
   GET_CATS_ERROR,
+  GET_MORE_CATS,
 } from "./types";
+
+export const getMoreCatsSucsess = (cats) => ({
+  type: GET_MORE_CATS,
+  payload: cats,
+});
 
 export const getCats = () => ({
   type: GET_CATS_START,

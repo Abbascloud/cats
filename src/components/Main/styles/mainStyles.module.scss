@@ -5,9 +5,27 @@
     padding: 52px 38px 48px 38px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    @media(max-width: 1240px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    @media(max-width: 1024px) {
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+    @media(max-width: 760px) {
+        grid-template-columns: 1fr 1fr  ;
+    }
+    @media(max-width: 500px) {
+        grid-template-columns:  1fr  ;
+    }
 }
 
 
+.main__cardWrapper{
+    background-color: red;
+
+}
 
 .main__loadMoreButton{
     border: none;

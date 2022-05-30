@@ -1,7 +1,11 @@
 import classes from "./styles/mainStyles.module.css";
 import { CatCard } from "./CatCard";
 
-export function Main({ data, isButtonVisible }) {
+export function Main({ data, isButtonVisible, buttonHandler }) {
+  const loadMoreCats = () => {
+    buttonHandler();
+  };
+
   return (
     <main className={classes.main}>
       <div className={classes.main__cats}>
@@ -10,7 +14,11 @@ export function Main({ data, isButtonVisible }) {
         })}
       </div>
       {isButtonVisible && (
-        <button type="button" className={classes.main__loadMoreButton}>
+        <button
+          onClick={loadMoreCats}
+          type="button"
+          className={classes.main__loadMoreButton}
+        >
           ...загружаем еще котиков
         </button>
       )}

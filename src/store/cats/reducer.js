@@ -4,6 +4,7 @@ import {
   GET_CATS_START,
   GET_CATS_SUCSESS,
   GET_CATS_ERROR,
+  GET_MORE_CATS,
 } from "./types";
 
 const initialState = {
@@ -21,7 +22,12 @@ export const catsReducer = (state = initialState, action) => {
         catsLoading: true,
         catsError: null,
       };
-
+    case GET_MORE_CATS:
+      return {
+        ...state,
+        catsLoading: false,
+        cats: [...state.cats, ...action.payload],
+      };
     case GET_CATS_SUCSESS:
       return {
         ...state,

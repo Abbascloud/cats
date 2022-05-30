@@ -1,14 +1,19 @@
 .catCard {
   padding: 24px;
   position: relative;
+  height: 30vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.catCard__img {
-  height: 100%;
-  width: 100%;
+@media (max-width: 760px) {
+  .catCard {
+    height: 100%;
+  }
 }
 
 .catCard:hover {
+  height: 100%;
   padding: 0;
   -webkit-box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
           box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
@@ -16,6 +21,11 @@
 
 .catCard:hover .catCardLike {
   display: block;
+}
+
+.catCard__img {
+  height: 100%;
+  width: 100%;
 }
 
 .catCardLike {
