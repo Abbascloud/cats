@@ -1,0 +1,22 @@
+.main__cats {
+  padding: 52px 38px 48px 38px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.main__loadMoreButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+}
+/*# sourceMappingURL=mainStyles.module.css.map */

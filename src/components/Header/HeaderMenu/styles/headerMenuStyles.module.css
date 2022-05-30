@@ -1,0 +1,27 @@
+.headerMenu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.headerMenu__item {
+  color: #FFFF;
+  padding: 23px 10px 23px 10px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+}
+
+.headerMenu__item:hover {
+  background: #1E88E5;
+}
+/*# sourceMappingURL=headerMenuStyles.module.css.map */

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,OAAO,CAAA;EACH,gBAAgB,ECJD,OAAO;EDKtB,YAAY,EAAE,IAAI;CAErB",
+    "sources": [
+        "headerStyles.module.scss",
+        "../../../styles/__var.scss"
+    ],
+    "names": [],
+    "file": "headerStyles.module.css"
+}

@@ -1,0 +1,28 @@
+.catCard {
+  padding: 24px;
+  position: relative;
+}
+
+.catCard__img {
+  height: 100%;
+  width: 100%;
+}
+
+.catCard:hover {
+  padding: 0;
+  -webkit-box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
+}
+
+.catCard:hover .catCardLike {
+  display: block;
+}
+
+.catCardLike {
+  position: absolute;
+  display: none;
+  right: 24px;
+  bottom: 24px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=catCardStyles.module.css.map */
